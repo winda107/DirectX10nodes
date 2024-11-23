@@ -97,7 +97,7 @@ void RenderScene()
 	g_pd3dDevice->ClearRenderTargetView(g_pRenderTargetView,
 		ClearColor);
 
-	g_pFont->DrawText(NULL, L"Этот текс я породил в 21:37", -1, &rect, DT_CENTER | DT_VCENTER, D3DXCOLOR(1.0f, 1.0f, 1.0f, 1.0f));
+	g_pFont->DrawText(NULL, L"Этот текс я изменил в 13:34", -1, &rect, DT_CENTER | DT_VCENTER, D3DXCOLOR(1.0f, 1.0f, 1.0f, 1.0f));
 	g_pSwapChain->Present(0, 0);
 }
 void cleanup() {
