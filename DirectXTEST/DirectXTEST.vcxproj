@@ -109,13 +109,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)/DirectX/include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)/include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>d3d10.lib;d3dx10.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)/DirectX/lib/x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)/lib/x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -138,118 +138,118 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\DirectX\include\audiodefs.h" />
-    <ClInclude Include="..\DirectX\include\comdecl.h" />
-    <ClInclude Include="..\DirectX\include\D2D1.h" />
-    <ClInclude Include="..\DirectX\include\D2D1Helper.h" />
-    <ClInclude Include="..\DirectX\include\D2DBaseTypes.h" />
-    <ClInclude Include="..\DirectX\include\D2Derr.h" />
-    <ClInclude Include="..\DirectX\include\D3D10.h" />
-    <ClInclude Include="..\DirectX\include\D3D10effect.h" />
-    <ClInclude Include="..\DirectX\include\d3d10misc.h" />
-    <ClInclude Include="..\DirectX\include\d3d10sdklayers.h" />
-    <ClInclude Include="..\DirectX\include\D3D10shader.h" />
-    <ClInclude Include="..\DirectX\include\D3D10_1.h" />
-    <ClInclude Include="..\DirectX\include\D3D10_1shader.h" />
-    <ClInclude Include="..\DirectX\include\D3D11.h" />
-    <ClInclude Include="..\DirectX\include\D3D11SDKLayers.h" />
-    <ClInclude Include="..\DirectX\include\D3D11Shader.h" />
-    <ClInclude Include="..\DirectX\include\d3d9.h" />
-    <ClInclude Include="..\DirectX\include\d3d9caps.h" />
-    <ClInclude Include="..\DirectX\include\d3d9types.h" />
-    <ClInclude Include="..\DirectX\include\D3Dcommon.h" />
-    <ClInclude Include="..\DirectX\include\D3Dcompiler.h" />
-    <ClInclude Include="..\DirectX\include\D3DCSX.h" />
-    <ClInclude Include="..\DirectX\include\D3DX10.h" />
-    <ClInclude Include="..\DirectX\include\d3dx10async.h" />
-    <ClInclude Include="..\DirectX\include\D3DX10core.h" />
-    <ClInclude Include="..\DirectX\include\D3DX10math.h" />
-    <ClInclude Include="..\DirectX\include\D3DX10mesh.h" />
-    <ClInclude Include="..\DirectX\include\D3DX10tex.h" />
-    <ClInclude Include="..\DirectX\include\D3DX11.h" />
-    <ClInclude Include="..\DirectX\include\D3DX11async.h" />
-    <ClInclude Include="..\DirectX\include\D3DX11core.h" />
-    <ClInclude Include="..\DirectX\include\D3DX11tex.h" />
-    <ClInclude Include="..\DirectX\include\d3dx9.h" />
-    <ClInclude Include="..\DirectX\include\d3dx9anim.h" />
-    <ClInclude Include="..\DirectX\include\d3dx9core.h" />
-    <ClInclude Include="..\DirectX\include\d3dx9effect.h" />
-    <ClInclude Include="..\DirectX\include\d3dx9math.h" />
-    <ClInclude Include="..\DirectX\include\d3dx9mesh.h" />
-    <ClInclude Include="..\DirectX\include\d3dx9shader.h" />
-    <ClInclude Include="..\DirectX\include\d3dx9shape.h" />
-    <ClInclude Include="..\DirectX\include\d3dx9tex.h" />
-    <ClInclude Include="..\DirectX\include\d3dx9xof.h" />
-    <ClInclude Include="..\DirectX\include\Dcommon.h" />
-    <ClInclude Include="..\DirectX\include\dinput.h" />
-    <ClInclude Include="..\DirectX\include\dinputd.h" />
-    <ClInclude Include="..\DirectX\include\dsconf.h" />
-    <ClInclude Include="..\DirectX\include\dsetup.h" />
-    <ClInclude Include="..\DirectX\include\dsound.h" />
-    <ClInclude Include="..\DirectX\include\DWrite.h" />
-    <ClInclude Include="..\DirectX\include\dxdiag.h" />
-    <ClInclude Include="..\DirectX\include\DxErr.h" />
-    <ClInclude Include="..\DirectX\include\dxfile.h" />
-    <ClInclude Include="..\DirectX\include\DXGI.h" />
-    <ClInclude Include="..\DirectX\include\DXGIFormat.h" />
-    <ClInclude Include="..\DirectX\include\DXGIType.h" />
-    <ClInclude Include="..\DirectX\include\dxsdkver.h" />
-    <ClInclude Include="..\DirectX\include\gameux.h" />
-    <ClInclude Include="..\DirectX\include\PIXPlugin.h" />
-    <ClInclude Include="..\DirectX\include\rmxfguid.h" />
-    <ClInclude Include="..\DirectX\include\rmxftmpl.h" />
-    <ClInclude Include="..\DirectX\include\rpcsal.h" />
-    <ClInclude Include="..\DirectX\include\X3DAudio.h" />
-    <ClInclude Include="..\DirectX\include\xact3.h" />
-    <ClInclude Include="..\DirectX\include\xact3d3.h" />
-    <ClInclude Include="..\DirectX\include\xact3wb.h" />
-    <ClInclude Include="..\DirectX\include\XAPO.h" />
-    <ClInclude Include="..\DirectX\include\XAPOBase.h" />
-    <ClInclude Include="..\DirectX\include\XAPOFX.h" />
-    <ClInclude Include="..\DirectX\include\XAudio2.h" />
-    <ClInclude Include="..\DirectX\include\XAudio2fx.h" />
-    <ClInclude Include="..\DirectX\include\XDSP.h" />
-    <ClInclude Include="..\DirectX\include\XInput.h" />
-    <ClInclude Include="..\DirectX\include\xma2defs.h" />
-    <ClInclude Include="..\DirectX\include\xnamath.h" />
+    <ClInclude Include="..\include\audiodefs.h" />
+    <ClInclude Include="..\include\comdecl.h" />
+    <ClInclude Include="..\include\D2D1.h" />
+    <ClInclude Include="..\include\D2D1Helper.h" />
+    <ClInclude Include="..\include\D2DBaseTypes.h" />
+    <ClInclude Include="..\include\D2Derr.h" />
+    <ClInclude Include="..\include\D3D10.h" />
+    <ClInclude Include="..\include\D3D10effect.h" />
+    <ClInclude Include="..\include\d3d10misc.h" />
+    <ClInclude Include="..\include\d3d10sdklayers.h" />
+    <ClInclude Include="..\include\D3D10shader.h" />
+    <ClInclude Include="..\include\D3D10_1.h" />
+    <ClInclude Include="..\include\D3D10_1shader.h" />
+    <ClInclude Include="..\include\D3D11.h" />
+    <ClInclude Include="..\include\D3D11SDKLayers.h" />
+    <ClInclude Include="..\include\D3D11Shader.h" />
+    <ClInclude Include="..\include\d3d9.h" />
+    <ClInclude Include="..\include\d3d9caps.h" />
+    <ClInclude Include="..\include\d3d9types.h" />
+    <ClInclude Include="..\include\D3Dcommon.h" />
+    <ClInclude Include="..\include\D3Dcompiler.h" />
+    <ClInclude Include="..\include\D3DCSX.h" />
+    <ClInclude Include="..\include\D3DX10.h" />
+    <ClInclude Include="..\include\d3dx10async.h" />
+    <ClInclude Include="..\include\D3DX10core.h" />
+    <ClInclude Include="..\include\D3DX10math.h" />
+    <ClInclude Include="..\include\D3DX10mesh.h" />
+    <ClInclude Include="..\include\D3DX10tex.h" />
+    <ClInclude Include="..\include\D3DX11.h" />
+    <ClInclude Include="..\include\D3DX11async.h" />
+    <ClInclude Include="..\include\D3DX11core.h" />
+    <ClInclude Include="..\include\D3DX11tex.h" />
+    <ClInclude Include="..\include\d3dx9.h" />
+    <ClInclude Include="..\include\d3dx9anim.h" />
+    <ClInclude Include="..\include\d3dx9core.h" />
+    <ClInclude Include="..\include\d3dx9effect.h" />
+    <ClInclude Include="..\include\d3dx9math.h" />
+    <ClInclude Include="..\include\d3dx9mesh.h" />
+    <ClInclude Include="..\include\d3dx9shader.h" />
+    <ClInclude Include="..\include\d3dx9shape.h" />
+    <ClInclude Include="..\include\d3dx9tex.h" />
+    <ClInclude Include="..\include\d3dx9xof.h" />
+    <ClInclude Include="..\include\Dcommon.h" />
+    <ClInclude Include="..\include\dinput.h" />
+    <ClInclude Include="..\include\dinputd.h" />
+    <ClInclude Include="..\include\dsconf.h" />
+    <ClInclude Include="..\include\dsetup.h" />
+    <ClInclude Include="..\include\dsound.h" />
+    <ClInclude Include="..\include\DWrite.h" />
+    <ClInclude Include="..\include\dxdiag.h" />
+    <ClInclude Include="..\include\DxErr.h" />
+    <ClInclude Include="..\include\dxfile.h" />
+    <ClInclude Include="..\include\DXGI.h" />
+    <ClInclude Include="..\include\DXGIFormat.h" />
+    <ClInclude Include="..\include\DXGIType.h" />
+    <ClInclude Include="..\include\dxsdkver.h" />
+    <ClInclude Include="..\include\gameux.h" />
+    <ClInclude Include="..\include\PIXPlugin.h" />
+    <ClInclude Include="..\include\rmxfguid.h" />
+    <ClInclude Include="..\include\rmxftmpl.h" />
+    <ClInclude Include="..\include\rpcsal.h" />
+    <ClInclude Include="..\include\X3DAudio.h" />
+    <ClInclude Include="..\include\xact3.h" />
+    <ClInclude Include="..\include\xact3d3.h" />
+    <ClInclude Include="..\include\xact3wb.h" />
+    <ClInclude Include="..\include\XAPO.h" />
+    <ClInclude Include="..\include\XAPOBase.h" />
+    <ClInclude Include="..\include\XAPOFX.h" />
+    <ClInclude Include="..\include\XAudio2.h" />
+    <ClInclude Include="..\include\XAudio2fx.h" />
+    <ClInclude Include="..\include\XDSP.h" />
+    <ClInclude Include="..\include\XInput.h" />
+    <ClInclude Include="..\include\xma2defs.h" />
+    <ClInclude Include="..\include\xnamath.h" />
     <ClInclude Include="header.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\DirectX\include\D3DX10math.inl" />
-    <None Include="..\DirectX\include\d3dx9math.inl" />
-    <None Include="..\DirectX\include\D3DX_DXGIFormatConvert.inl" />
-    <None Include="..\DirectX\include\xnamathconvert.inl" />
-    <None Include="..\DirectX\include\xnamathmatrix.inl" />
-    <None Include="..\DirectX\include\xnamathmisc.inl" />
-    <None Include="..\DirectX\include\xnamathvector.inl" />
+    <None Include="..\include\D3DX10math.inl" />
+    <None Include="..\include\d3dx9math.inl" />
+    <None Include="..\include\D3DX_DXGIFormatConvert.inl" />
+    <None Include="..\include\xnamathconvert.inl" />
+    <None Include="..\include\xnamathmatrix.inl" />
+    <None Include="..\include\xnamathmisc.inl" />
+    <None Include="..\include\xnamathvector.inl" />
   </ItemGroup>
   <ItemGroup>
-    <Library Include="..\DirectX\lib\x64\d2d1.lib" />
-    <Library Include="..\DirectX\lib\x64\d3d10.lib" />
-    <Library Include="..\DirectX\lib\x64\d3d10_1.lib" />
-    <Library Include="..\DirectX\lib\x64\d3d11.lib" />
-    <Library Include="..\DirectX\lib\x64\d3d9.lib" />
-    <Library Include="..\DirectX\lib\x64\d3dcompiler.lib" />
-    <Library Include="..\DirectX\lib\x64\D3DCSX.lib" />
-    <Library Include="..\DirectX\lib\x64\D3DCSXd.lib" />
-    <Library Include="..\DirectX\lib\x64\d3dx10.lib" />
-    <Library Include="..\DirectX\lib\x64\d3dx10d.lib" />
-    <Library Include="..\DirectX\lib\x64\d3dx11.lib" />
-    <Library Include="..\DirectX\lib\x64\d3dx11d.lib" />
-    <Library Include="..\DirectX\lib\x64\d3dx9.lib" />
-    <Library Include="..\DirectX\lib\x64\d3dx9d.lib" />
-    <Library Include="..\DirectX\lib\x64\d3dxof.lib" />
-    <Library Include="..\DirectX\lib\x64\dinput8.lib" />
-    <Library Include="..\DirectX\lib\x64\dsound.lib" />
-    <Library Include="..\DirectX\lib\x64\dwrite.lib" />
-    <Library Include="..\DirectX\lib\x64\DxErr.lib" />
-    <Library Include="..\DirectX\lib\x64\dxgi.lib" />
-    <Library Include="..\DirectX\lib\x64\dxguid.lib" />
-    <Library Include="..\DirectX\lib\x64\X3DAudio.lib" />
-    <Library Include="..\DirectX\lib\x64\xapobase.lib" />
-    <Library Include="..\DirectX\lib\x64\xapobased.lib" />
-    <Library Include="..\DirectX\lib\x64\XAPOFX.lib" />
-    <Library Include="..\DirectX\lib\x64\XInput.lib" />
+    <Library Include="..\lib\x64\d2d1.lib" />
+    <Library Include="..\lib\x64\d3d10.lib" />
+    <Library Include="..\lib\x64\d3d10_1.lib" />
+    <Library Include="..\lib\x64\d3d11.lib" />
+    <Library Include="..\lib\x64\d3d9.lib" />
+    <Library Include="..\lib\x64\d3dcompiler.lib" />
+    <Library Include="..\lib\x64\D3DCSX.lib" />
+    <Library Include="..\lib\x64\D3DCSXd.lib" />
+    <Library Include="..\lib\x64\d3dx10.lib" />
+    <Library Include="..\lib\x64\d3dx10d.lib" />
+    <Library Include="..\lib\x64\d3dx11.lib" />
+    <Library Include="..\lib\x64\d3dx11d.lib" />
+    <Library Include="..\lib\x64\d3dx9.lib" />
+    <Library Include="..\lib\x64\d3dx9d.lib" />
+    <Library Include="..\lib\x64\d3dxof.lib" />
+    <Library Include="..\lib\x64\dinput8.lib" />
+    <Library Include="..\lib\x64\dsound.lib" />
+    <Library Include="..\lib\x64\dwrite.lib" />
+    <Library Include="..\lib\x64\DxErr.lib" />
+    <Library Include="..\lib\x64\dxgi.lib" />
+    <Library Include="..\lib\x64\dxguid.lib" />
+    <Library Include="..\lib\x64\X3DAudio.lib" />
+    <Library Include="..\lib\x64\xapobase.lib" />
+    <Library Include="..\lib\x64\xapobased.lib" />
+    <Library Include="..\lib\x64\XAPOFX.lib" />
+    <Library Include="..\lib\x64\XInput.lib" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
